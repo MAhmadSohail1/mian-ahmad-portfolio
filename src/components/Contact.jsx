@@ -9,6 +9,7 @@ import {
   CheckCircle2,
   Loader2,
   MapPin,
+  Download,
 } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from './SocialIcons'
 import { profileConfig } from '../utils/profileConfig'
@@ -240,6 +241,19 @@ export default function Contact() {
                     <span>LinkedIn</span>
                   </a>
                 </div>
+              </div>
+
+              {/* Direct CV Download */}
+              <div className="pt-4 border-t border-slate-800/80">
+                <a
+                  href={profileConfig.cvUrl}
+                  download={profileConfig.cvFileName}
+                  className="btn-secondary-dash w-full text-xs"
+                  aria-label="Download Ahmad Sohail CV (PDF)"
+                >
+                  <Download className="w-4 h-4 text-violet-400" />
+                  <span>Download CV (PDF)</span>
+                </a>
               </div>
             </div>
           </div>

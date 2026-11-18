@@ -16,6 +16,9 @@ export const profileConfig = {
   linkedinUrl: 'https://www.linkedin.com/in/muhammad-ahmad-78a243371',
   // Real profile photograph placed at `public/profile.jpg` (works on root and subpath deploys)
   photoUrl: `${import.meta.env.BASE_URL}profile.jpg`,
+  // Direct-download PDF CV (not embedded on page — downloads on click)
+  cvUrl: `${import.meta.env.BASE_URL}Ahmad_Sohail_CV.pdf`,
+  cvFileName: 'Ahmad_Sohail_CV.pdf',
   typingRoles: [
     'MERN Stack Developer',
     'React.js Developer',

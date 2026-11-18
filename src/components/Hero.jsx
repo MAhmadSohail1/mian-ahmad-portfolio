@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, Mail } from 'lucide-react'
+import { ArrowRight, Mail, Download } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from './SocialIcons'
 import { profileConfig } from '../utils/profileConfig'
 
@@ -148,7 +148,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-1"
+            className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 pt-1"
           >
             <motion.a
               whileHover={{ y: -2 }}
@@ -170,6 +170,18 @@ export default function Hero() {
             >
               <Mail className="w-4 h-4 text-blue-400" />
               <span>Contact Me</span>
+            </motion.a>
+
+            <motion.a
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              href={profileConfig.cvUrl}
+              download={profileConfig.cvFileName}
+              className="btn-secondary-dash"
+              aria-label="Download Ahmad Sohail CV (PDF)"
+            >
+              <Download className="w-4 h-4 text-violet-400" />
+              <span>Download CV</span>
             </motion.a>
           </motion.div>
 
