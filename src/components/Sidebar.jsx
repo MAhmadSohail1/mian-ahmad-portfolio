@@ -10,7 +10,6 @@ import {
   Mail,
   Menu,
   X,
-  MapPin,
 } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from './SocialIcons'
 import ProfileAvatar from './ProfileAvatar'
@@ -99,32 +98,8 @@ export default function Sidebar() {
 
   const sidebarContent = (isMobile = false) => (
     <div className="flex flex-col h-full justify-between px-5 py-6">
-      {/* Top: Profile Identity */}
-      <div className="space-y-6">
-        <div className="flex flex-col items-center text-center pt-1 pb-5 border-b border-slate-800/80">
-          <a
-            href="#overview"
-            onClick={(e) => handleNavClick(e, profileConfig.navItems[0])}
-            className="focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-full"
-            aria-label={`${profileConfig.name} — Back to Overview`}
-          >
-            <ProfileAvatar size="lg" shape="circle" showStatusDot />
-          </a>
-
-          <h2 className="mt-4 text-base font-bold tracking-tight text-white">
-            {profileConfig.name}
-          </h2>
-          <p className="mt-0.5 text-xs font-medium text-blue-400">
-            {profileConfig.title}
-          </p>
-
-          <div className="mt-2.5 inline-flex items-center gap-1.5 text-[11px] text-slate-400">
-            <MapPin className="w-3 h-3 text-slate-500" />
-            <span>{profileConfig.location}</span>
-          </div>
-        </div>
-
-        {/* Navigation Links */}
+      {/* Navigation Links */}
+      <div className="pt-2">
         <nav aria-label="Portfolio sections" className="space-y-1">
           <p className="px-3 mb-2 text-[10px] font-mono uppercase tracking-widest text-slate-500">
             Navigation

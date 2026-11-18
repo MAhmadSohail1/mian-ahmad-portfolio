@@ -53,7 +53,7 @@ export const projectsData = [
       'Responsive developer dashboard portfolio built with React.js, Vite, Tailwind CSS, and Framer Motion. Includes a fixed sidebar layout, interactive animations, and direct email integration.',
     tags: ['React.js', 'JavaScript', 'Tailwind CSS', 'Vite'],
     imageUrl: null,
-    githubUrl: 'https://github.com/MAhmadSohail1/portfolio-web',
-    liveUrl: 'https://mahmadsohail1.github.io/portfolio-web/',
+    githubUrl: 'https://github.com/MAhmadSohail1/mian-ahmad-portfolio',
+    liveUrl: 'https://mahmadsohail1.github.io/mian-ahmad-portfolio/',
   },
 ]
