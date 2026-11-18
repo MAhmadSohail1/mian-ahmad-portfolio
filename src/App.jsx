@@ -1,5 +1,4 @@
 import { MotionConfig } from 'framer-motion'
-import Sidebar from './components/Sidebar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -19,11 +18,8 @@ function App() {
           aria-hidden="true"
         />
 
-        {/* Fixed Left Sidebar (Desktop) + Mobile Top Bar & Slide-Over Drawer */}
-        <Sidebar />
-
-        {/* Main Content Workspace */}
-        <div className="relative z-10 lg:pl-72 flex flex-col min-h-screen">
+        {/* Main Content Workspace (Full Width Centered, No Sidebar) */}
+        <div className="relative z-10 flex flex-col min-h-screen">
           <main className="dashboard-container flex-1">
             <Hero />
             <About />
